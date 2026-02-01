@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="DinkToPdf/DinkToPdf.csproj" />
+  <Project Path="Palmmedia.InvoiceSample/Palmmedia.InvoiceSample.csproj" />
+</Solution>
