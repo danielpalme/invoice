@@ -1,6 +1,4 @@
-﻿using DinkToPdf;
-using DinkToPdf.Contracts;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
@@ -121,7 +119,9 @@ static void ConfigureServices(IServiceCollection services)
     services.AddSingleton<IConfiguration>(configuration);
     services.Configure<OrderSettings>(configuration.GetSection("OrderSettings"));
 
-    services.AddSingleton(typeof(IConverter), new SynchronizedConverter(new PdfTools()));
-    services.AddSingleton<IPdfGenerator, PdfGenerator>();
+    //services.AddSingleton(typeof(IConverter), new SynchronizedConverter(new PdfTools()));
+    //services.AddSingleton<IPdfGenerator, Dink2PdfGenerator>();
+
+    services.AddSingleton<IPdfGenerator, PuppeteerSharpPdfGenerator>();
     services.AddSingleton<IOrderRenderer, OrderRenderer>();
 }

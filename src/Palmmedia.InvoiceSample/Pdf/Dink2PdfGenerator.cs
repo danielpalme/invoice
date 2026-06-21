@@ -5,11 +5,11 @@ using DinkToPdf.Contracts;
 
 namespace Palmmedia.InvoiceSample.Pdf;
 
-public class PdfGenerator : IPdfGenerator
+public class Dink2PdfGenerator : IPdfGenerator
 {
     private readonly IConverter converter;
 
-    public PdfGenerator(IConverter converter)
+    public Dink2PdfGenerator(IConverter converter)
     {
         this.converter = converter;
     }

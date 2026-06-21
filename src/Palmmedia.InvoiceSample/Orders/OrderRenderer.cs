@@ -19,11 +19,11 @@ public class OrderRenderer(
 
         sb.AppendLine("<html>");
         sb.AppendLine("<head>");
-        sb.AppendLine("<style media=\"screen\" type=\"text/css\">");
-        sb.AppendLine($"body {{ font-family: 'Arial', sans-serif; padding: 2cm; }}");
+        sb.AppendLine("<style type=\"text/css\">");
+        sb.AppendLine($"body {{ font-family: 'Arial', sans-serif; padding: 2cm; font-size: .8rem; }}");
         sb.AppendLine("table { width: 100%; margin-bottom: 20px; border-spacing: 0; border-collapse: collapse; }");
-        sb.AppendLine("th { text-align: left; }");
-        sb.AppendLine("th, td { margin:0; padding: 5px; vertical-align: top; }");
+        sb.AppendLine("th { text-align: left; font-size: .8rem; }");
+        sb.AppendLine("th, td { margin:0; padding: 5px; vertical-align: top; font-size: .8rem; }");
         sb.AppendLine(".table-bordered th, .table-bordered td { border: 1px solid #5A5A5A; padding: 7px; }");
         sb.AppendLine(".noborder { border: none !important; }");
         sb.AppendLine(".text-center { text-align: center; }");
